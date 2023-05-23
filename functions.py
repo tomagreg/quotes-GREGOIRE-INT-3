@@ -32,7 +32,7 @@ def display_quotes(quotes, count):
 
 def add_quote(quotes, filename):
     new_quote = input("Enter a new quote: ")
-    quotes.append(new_quote)
+    quotes.append("\n" + new_quote)
     
     with open(filename, 'a') as file:
         file.write(new_quote)
